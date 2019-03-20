@@ -11,11 +11,11 @@ queue, and one to use to subscribe to messages forwarded on by the
 exchange or queue. You subscribe with a callback URL, so when messages
 arrive, RabbitHub POSTs them on to your callback. For example,
 
- - <http://dev.rabbitmq.com/rabbithub/endpoint/x/amq.direct> is the
+ - <https://dev.rabbitmq.com/rabbithub/endpoint/x/amq.direct> is the
    URL for delivering messages to the "amq.direct" exchange on the
    public test instance of RabbitMQ, and
 
- - <http://dev.rabbitmq.com/rabbithub/subscribe/q/some_queue_name> is
+ - <https://dev.rabbitmq.com/rabbithub/subscribe/q/some_queue_name> is
    the URL for subscribing to messages from the (hypothetical) queue
    "some_queue_name" on the broker.
 
@@ -44,13 +44,13 @@ message networks - for example, our public RabbitMQ instance,
 adapter, the [rabbitmq-xmpp][] plugin, and a bunch of our other
 experimental stuff, so you can do things like this:
 
-<img src="http://github.com/tonyg/rabbithub/raw/master/doc/rabbithub-example.png" alt="RabbitHub example configuration"/>
+<img src="https://github.com/tonyg/rabbithub/raw/master/doc/rabbithub-example.png" alt="RabbitHub example configuration"/>
 
  - become XMPP friends with `pshb@dev.rabbitmq.com` (the XMPP adapter
    gives each exchange a JID of its own)
 
  - use PubSubHubBub to subscribe the sink
-   <http://dev.rabbitmq.com/rabbithub/endpoint/x/pshb> to some
+   <https://dev.rabbitmq.com/rabbithub/endpoint/x/pshb> to some
    PubSubHubBub source - perhaps one on the public Google PSHB
    instance. (Note how the given URL ends in "x/pshb", meaning the
    "pshb" exchange - which lines up with the JID we just became XMPP
@@ -68,24 +68,24 @@ rather than anything intrinsic in pubsub-over-webhooks.
 ## HTTP messaging in the Browser
 
 In order to push AMQP messages out to a webpage running in a browser,
-try using <http://www.reversehttp.net/> to run a PubSubHubBub endpoint
+try using <https://reversehttp.net/> to run a PubSubHubBub endpoint
 in a webpage - see for instance
-<http://www.reversehttp.net/demos/endpoint.html> and its [associated
-Javascript](http://www.reversehttp.net/demos/endpoint.js) for a simple
+<https://reversehttp.net/demos/endpoint.html> and its [associated
+Javascript](https://reversehttp.net/demos/endpoint.js) for a simple
 prototype of the idea. It's also possible to build simple PSHB hubs in
 Javascript using the same tools.
 
-  [gitrepo]: http://github.com/tonyg/rabbithub
-  [pshb_project]: http://code.google.com/p/pubsubhubbub/
-  [spec]: http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.1.html
-  [RabbitMQ]: http://www.rabbitmq.com/
-  [rabbitmq-xmpp]: http://hg.rabbitmq.com/rabbitmq-xmpp/raw-file/default/doc/overview-summary.html
+  [gitrepo]: https://github.com/tonyg/rabbithub
+  [pshb_project]: https://code.google.com/p/pubsubhubbub/
+  [spec]: https://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.1.html
+  [RabbitMQ]: https://www.rabbitmq.com/
+  [rabbitmq-xmpp]: https://hg.rabbitmq.com/rabbitmq-xmpp/raw-file/default/doc/overview-summary.html
 
 ## Software License
 
-RabbitHub is [open-source](http://www.opensource.org/) code, licensed
+RabbitHub is [open-source](https://www.opensource.org/) code, licensed
 under the very liberal [MIT
-license](http://www.opensource.org/licenses/mit-license.php):
+license](https://www.opensource.org/licenses/mit-license.php):
 
     Copyright (c) 2009 Tony Garnock-Jones <tonyg@lshift.net>
     Copyright (c) 2009 LShift Ltd. <query@lshift.net>
